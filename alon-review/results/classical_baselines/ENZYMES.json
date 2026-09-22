@@ -1,0 +1,6184 @@
+{
+ "dataset": "ENZYMES",
+ "config": {
+  "kind": "TU",
+  "dataset": "ENZYMES"
+ },
+ "test_indices": [
+  237,
+  411,
+  20,
+  453,
+  371,
+  550,
+  77,
+  390,
+  153,
+  306,
+  270,
+  543,
+  145,
+  508,
+  427,
+  554,
+  178,
+  234,
+  572,
+  351,
+  376,
+  448,
+  125,
+  71,
+  309,
+  598,
+  101,
+  189,
+  14,
+  488,
+  339,
+  342,
+  322,
+  154,
+  449,
+  2,
+  7,
+  261,
+  354,
+  527,
+  228,
+  246,
+  73,
+  363,
+  143,
+  140,
+  509,
+  202,
+  9,
+  579,
+  165,
+  395,
+  180,
+  458,
+  317,
+  160,
+  112,
+  18,
+  556,
+  314
+ ],
+ "cutoff_s": 10,
+ "seed": 0,
+ "per_graph": [
+  {
+   "idx": 2,
+   "n": 25,
+   "m": 46,
+   "greedy": {
+    "size": 21,
+    "time_s": 0.00034293578937649727
+   },
+   "matching": {
+    "size": 22,
+    "time_s": 0.00026878807693719864
+   },
+   "lp": {
+    "size": 18,
+    "time_s": 0.01365878526121378,
+    "lp_optimum": 12.5
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.009454953949898481,
+    "runtime_s": 0.0074269771575927734,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      7.891654968261719e-05,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.0074269771575927734,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009761168621480465,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.011070874985307455,
+    "trace": [
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 9.4442e-05,
+    "wall_s": 10.003126299008727,
+    "trace": [
+     [
+      9.4442e-05,
+      17
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.010481642093509436,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 7,
+   "n": 88,
+   "m": 133,
+   "greedy": {
+    "size": 73,
+    "time_s": 0.002935491967946291
+   },
+   "matching": {
+    "size": 84,
+    "time_s": 0.0008972156792879105
+   },
+   "lp": {
+    "size": 57,
+    "time_s": 0.016573272179812193,
+    "lp_optimum": 44.0
+   },
+   "gurobi": {
+    "size": 46,
+    "time_s": 0.02462949976325035,
+    "runtime_s": 0.009015083312988281,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0002491474151611328,
+      46.0,
+      -1e+100
+     ],
+     [
+      0.009015083312988281,
+      46,
+      46.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 46,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008581818081438541,
+    "trace": [
+     [
+      0.0,
+      47
+     ],
+     [
+      0.0,
+      46
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 46,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.011969306040555239,
+    "trace": [
+     [
+      0.0,
+      53
+     ],
+     [
+      0.0,
+      52
+     ],
+     [
+      0.0,
+      51
+     ],
+     [
+      0.0,
+      50
+     ],
+     [
+      0.0,
+      49
+     ],
+     [
+      0.0,
+      48
+     ],
+     [
+      0.0,
+      47
+     ],
+     [
+      0.0,
+      46
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 46,
+    "time_s": 0.000349637,
+    "wall_s": 10.0027880910784,
+    "trace": [
+     [
+      0.00025008,
+      53
+     ],
+     [
+      0.000298422,
+      52
+     ],
+     [
+      0.000304818,
+      50
+     ],
+     [
+      0.000320329,
+      49
+     ],
+     [
+      0.00032546,
+      48
+     ],
+     [
+      0.000349637,
+      46
+     ]
+    ],
+    "anytime_n": 6
+   },
+   "akiba_iwata": {
+    "size": 46,
+    "time_s": 0.0,
+    "wall_s": 0.008630513213574886,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 9,
+   "n": 32,
+   "m": 53,
+   "greedy": {
+    "size": 25,
+    "time_s": 0.00037233810871839523
+   },
+   "matching": {
+    "size": 28,
+    "time_s": 0.0002555982209742069
+   },
+   "lp": {
+    "size": 24,
+    "time_s": 0.007966367062181234,
+    "lp_optimum": 16.0
+   },
+   "gurobi": {
+    "size": 21,
+    "time_s": 0.014089684933423996,
+    "runtime_s": 0.00876307487487793,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00014400482177734375,
+      22.0,
+      -1e+100
+     ],
+     [
+      0.008666038513183594,
+      21.0,
+      -1e+100
+     ],
+     [
+      0.00876307487487793,
+      21,
+      21.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 21,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.015826300252228975,
+    "trace": [
+     [
+      0.0,
+      21
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 21,
+    "time_s": 0.003,
+    "total_time_s": 0.003,
+    "wall_s": 0.009298969060182571,
+    "trace": [
+     [
+      0.0,
+      22
+     ],
+     [
+      0.003,
+      21
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 21,
+    "time_s": 0.000146763,
+    "wall_s": 10.002592262811959,
+    "trace": [
+     [
+      9.916e-05,
+      22
+     ],
+     [
+      0.000146763,
+      21
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 21,
+    "time_s": 0.0,
+    "wall_s": 0.005587120074778795,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 14,
+   "n": 36,
+   "m": 64,
+   "greedy": {
+    "size": 29,
+    "time_s": 0.016102673951536417
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.0013622627593576908
+   },
+   "lp": {
+    "size": 25,
+    "time_s": 0.013027545996010303,
+    "lp_optimum": 18.0
+   },
+   "gurobi": {
+    "size": 24,
+    "time_s": 0.01766411168500781,
+    "runtime_s": 0.006031036376953125,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001690387725830078,
+      25.0,
+      -1e+100
+     ],
+     [
+      0.005938053131103516,
+      24.0,
+      -1e+100
+     ],
+     [
+      0.006031036376953125,
+      24,
+      24.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 24,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.012649464886635542,
+    "trace": [
+     [
+      0.0,
+      25
+     ],
+     [
+      0.0,
+      24
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 24,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006736394017934799,
+    "trace": [
+     [
+      0.0,
+      24
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 24,
+    "time_s": 0.000117551,
+    "wall_s": 10.003189561888576,
+    "trace": [
+     [
+      0.000117551,
+      24
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 24,
+    "time_s": 0.0,
+    "wall_s": 0.014587305020540953,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 18,
+   "n": 2,
+   "m": 1,
+   "greedy": {
+    "size": 1,
+    "time_s": 0.00024608802050352097
+   },
+   "matching": {
+    "size": 2,
+    "time_s": 0.00012501701712608337
+   },
+   "lp": {
+    "size": 1,
+    "time_s": 0.02098159957677126,
+    "lp_optimum": 1.0
+   },
+   "gurobi": {
+    "size": 1,
+    "time_s": 0.008631248027086258,
+    "runtime_s": 0.0011200904846191406,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001270771026611328,
+      1.0,
+      -1e+100
+     ],
+     [
+      0.0011200904846191406,
+      1,
+      1.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 1,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.015053524635732174,
+    "trace": [
+     [
+      0.0,
+      1
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 1,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007389448117464781,
+    "trace": [
+     [
+      0.0,
+      1
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 1,
+    "time_s": 0.0,
+    "note": "degenerate graph (n=2,m=1); FastWVC CLI parse bug; value = consensus of greedy/matching/LP/NuMVC/FastVC/Gurobi"
+   },
+   "akiba_iwata": {
+    "size": 1,
+    "time_s": 0.0,
+    "wall_s": 0.0042154802940785885,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 20,
+   "n": 42,
+   "m": 90,
+   "greedy": {
+    "size": 38,
+    "time_s": 0.0025268839672207832
+   },
+   "matching": {
+    "size": 42,
+    "time_s": 0.001695794053375721
+   },
+   "lp": {
+    "size": 29,
+    "time_s": 0.01165127893909812,
+    "lp_optimum": 21.0
+   },
+   "gurobi": {
+    "size": 27,
+    "time_s": 0.009291490074247122,
+    "runtime_s": 0.002290964126586914,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      9.417533874511719e-05,
+      29.0,
+      -1e+100
+     ],
+     [
+      0.0019559860229492188,
+      28.0,
+      20.0
+     ],
+     [
+      0.0021820068359375,
+      27.0,
+      27.0
+     ],
+     [
+      0.002290964126586914,
+      27,
+      27.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 27,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010313792154192924,
+    "trace": [
+     [
+      0.0,
+      29
+     ],
+     [
+      0.0,
+      28
+     ],
+     [
+      0.0,
+      27
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 27,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.0026994850486516953,
+    "trace": [
+     [
+      0.0,
+      29
+     ],
+     [
+      0.0,
+      28
+     ],
+     [
+      0.0,
+      27
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 27,
+    "time_s": 0.000204921,
+    "wall_s": 10.00289982976392,
+    "trace": [
+     [
+      0.000165878,
+      29
+     ],
+     [
+      0.000198956,
+      28
+     ],
+     [
+      0.000204921,
+      27
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 27,
+    "time_s": 0.0,
+    "wall_s": 0.024059618823230267,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 71,
+   "n": 40,
+   "m": 70,
+   "greedy": {
+    "size": 31,
+    "time_s": 0.010000532027333975
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.004368519876152277
+   },
+   "lp": {
+    "size": 29,
+    "time_s": 0.04766324255615473,
+    "lp_optimum": 20.0
+   },
+   "gurobi": {
+    "size": 26,
+    "time_s": 0.016556266229599714,
+    "runtime_s": 0.0027761459350585938,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00022101402282714844,
+      27.0,
+      -1e+100
+     ],
+     [
+      0.0027179718017578125,
+      26.0,
+      -1e+100
+     ],
+     [
+      0.0027761459350585938,
+      26,
+      26.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 26,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008294730447232723,
+    "trace": [
+     [
+      0.0,
+      27
+     ],
+     [
+      0.0,
+      26
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 26,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.005152186844497919,
+    "trace": [
+     [
+      0.0,
+      27
+     ],
+     [
+      0.0,
+      26
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 26,
+    "time_s": 0.000185703,
+    "wall_s": 10.003514952026308,
+    "trace": [
+     [
+      0.000127323,
+      27
+     ],
+     [
+      0.000185703,
+      26
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 26,
+    "time_s": 0.0,
+    "wall_s": 0.011277486104518175,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 73,
+   "n": 42,
+   "m": 94,
+   "greedy": {
+    "size": 38,
+    "time_s": 0.0005385619588196278
+   },
+   "matching": {
+    "size": 40,
+    "time_s": 0.0005676611326634884
+   },
+   "lp": {
+    "size": 32,
+    "time_s": 0.007929026149213314,
+    "lp_optimum": 21.0
+   },
+   "gurobi": {
+    "size": 28,
+    "time_s": 0.014079887885600328,
+    "runtime_s": 0.007220029830932617,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      8.296966552734375e-05,
+      30.0,
+      -1e+100
+     ],
+     [
+      0.00609898567199707,
+      29.0,
+      16.0
+     ],
+     [
+      0.007090091705322266,
+      28.0,
+      28.0
+     ],
+     [
+      0.007220029830932617,
+      28,
+      28.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 28,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.00945962080731988,
+    "trace": [
+     [
+      0.0,
+      29
+     ],
+     [
+      0.0,
+      28
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 28,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007804648019373417,
+    "trace": [
+     [
+      0.0,
+      29
+     ],
+     [
+      0.0,
+      28
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 28,
+    "time_s": 0.000244122,
+    "wall_s": 10.002881356049329,
+    "trace": [
+     [
+      0.0002014,
+      29
+     ],
+     [
+      0.000244122,
+      28
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 28,
+    "time_s": 0.0,
+    "wall_s": 0.02312322286888957,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 77,
+   "n": 17,
+   "m": 29,
+   "greedy": {
+    "size": 13,
+    "time_s": 0.002826815005391836
+   },
+   "matching": {
+    "size": 14,
+    "time_s": 0.0010778740979731083
+   },
+   "lp": {
+    "size": 12,
+    "time_s": 0.1318443757481873,
+    "lp_optimum": 8.5
+   },
+   "gurobi": {
+    "size": 12,
+    "time_s": 0.009045359212905169,
+    "runtime_s": 0.0012059211730957031,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00011205673217773438,
+      12.0,
+      -1e+100
+     ],
+     [
+      0.0012059211730957031,
+      12,
+      12.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.012993725016713142,
+    "trace": [
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006567463744431734,
+    "trace": [
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 12,
+    "time_s": 5.5614e-05,
+    "wall_s": 10.004095171112567,
+    "trace": [
+     [
+      5.5614e-05,
+      12
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 12,
+    "time_s": 0.0,
+    "wall_s": 0.02377526694908738,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 101,
+   "n": 42,
+   "m": 82,
+   "greedy": {
+    "size": 29,
+    "time_s": 0.003948692232370377
+   },
+   "matching": {
+    "size": 34,
+    "time_s": 0.001263500191271305
+   },
+   "lp": {
+    "size": 29,
+    "time_s": 0.032871434930711985,
+    "lp_optimum": 21.0
+   },
+   "gurobi": {
+    "size": 25,
+    "time_s": 0.0255698268301785,
+    "runtime_s": 0.012141942977905273,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00012993812561035156,
+      26.0,
+      -1e+100
+     ],
+     [
+      0.011794805526733398,
+      25.0,
+      11.0
+     ],
+     [
+      0.012141942977905273,
+      25,
+      25.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010066924151033163,
+    "trace": [
+     [
+      0.0,
+      26
+     ],
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.020219669211655855,
+    "trace": [
+     [
+      0.0,
+      27
+     ],
+     [
+      0.0,
+      26
+     ],
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 25,
+    "time_s": 0.000208387,
+    "wall_s": 10.002829282078892,
+    "trace": [
+     [
+      0.000153162,
+      27
+     ],
+     [
+      0.000201951,
+      26
+     ],
+     [
+      0.000208387,
+      25
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 25,
+    "time_s": 0.0,
+    "wall_s": 0.02024736488237977,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 112,
+   "n": 52,
+   "m": 98,
+   "greedy": {
+    "size": 38,
+    "time_s": 0.0008932542987167835
+   },
+   "matching": {
+    "size": 42,
+    "time_s": 0.0005502640269696712
+   },
+   "lp": {
+    "size": 35,
+    "time_s": 0.015799284912645817,
+    "lp_optimum": 26.0
+   },
+   "gurobi": {
+    "size": 30,
+    "time_s": 0.02450085896998644,
+    "runtime_s": 0.013382911682128906,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00016307830810546875,
+      35.0,
+      -1e+100
+     ],
+     [
+      0.013031959533691406,
+      31.0,
+      30.0
+     ],
+     [
+      0.013184070587158203,
+      30.0,
+      30.0
+     ],
+     [
+      0.013382911682128906,
+      30,
+      30.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 30,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.0143284578807652,
+    "trace": [
+     [
+      0.0,
+      30
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 30,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.012342344038188457,
+    "trace": [
+     [
+      0.0,
+      32
+     ],
+     [
+      0.0,
+      31
+     ],
+     [
+      0.0,
+      30
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 30,
+    "time_s": 0.00022836,
+    "wall_s": 10.002703430131078,
+    "trace": [
+     [
+      0.000178649,
+      32
+     ],
+     [
+      0.000219608,
+      31
+     ],
+     [
+      0.00022836,
+      30
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 30,
+    "time_s": 0.0,
+    "wall_s": 0.006542237009853125,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 125,
+   "n": 32,
+   "m": 47,
+   "greedy": {
+    "size": 26,
+    "time_s": 0.009610651060938835
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.005100382026284933
+   },
+   "lp": {
+    "size": 18,
+    "time_s": 0.011604242958128452,
+    "lp_optimum": 16.0
+   },
+   "gurobi": {
+    "size": 18,
+    "time_s": 0.023010967299342155,
+    "runtime_s": 0.015491008758544922,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001418590545654297,
+      18.0,
+      -1e+100
+     ],
+     [
+      0.015491008758544922,
+      18,
+      18.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 18,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.01438054395839572,
+    "trace": [
+     [
+      0.0,
+      21
+     ],
+     [
+      0.0,
+      20
+     ],
+     [
+      0.0,
+      19
+     ],
+     [
+      0.0,
+      18
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 18,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.012670674826949835,
+    "trace": [
+     [
+      0.0,
+      18
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 18,
+    "time_s": 8.6963e-05,
+    "wall_s": 10.002899229060858,
+    "trace": [
+     [
+      8.6963e-05,
+      18
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 18,
+    "time_s": 0.0,
+    "wall_s": 0.015731691848486662,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 140,
+   "n": 12,
+   "m": 24,
+   "greedy": {
+    "size": 9,
+    "time_s": 0.0003706342540681362
+   },
+   "matching": {
+    "size": 10,
+    "time_s": 0.0002257227897644043
+   },
+   "lp": {
+    "size": 8,
+    "time_s": 0.012667804025113583,
+    "lp_optimum": 6.0
+   },
+   "gurobi": {
+    "size": 8,
+    "time_s": 0.0054740081541240215,
+    "runtime_s": 0.0013968944549560547,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00010609626770019531,
+      8.0,
+      -1e+100
+     ],
+     [
+      0.0013968944549560547,
+      8,
+      8.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 8,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.0054529691115021706,
+    "trace": [
+     [
+      0.0,
+      8
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 8,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008678203914314508,
+    "trace": [
+     [
+      0.0,
+      8
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 8,
+    "time_s": 5.8937e-05,
+    "wall_s": 10.003736725077033,
+    "trace": [
+     [
+      5.8937e-05,
+      8
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 8,
+    "time_s": 0.0,
+    "wall_s": 0.005741593893617392,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 143,
+   "n": 19,
+   "m": 35,
+   "greedy": {
+    "size": 14,
+    "time_s": 0.0004772101528942585
+   },
+   "matching": {
+    "size": 18,
+    "time_s": 0.0003205500543117523
+   },
+   "lp": {
+    "size": 13,
+    "time_s": 0.0078146499581635,
+    "lp_optimum": 9.5
+   },
+   "gurobi": {
+    "size": 13,
+    "time_s": 0.004625027067959309,
+    "runtime_s": 0.0019750595092773438,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001380443572998047,
+      13.0,
+      -1e+100
+     ],
+     [
+      0.0019750595092773438,
+      13,
+      13.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 13,
+    "time_s": 0.0,
+    "total_time_s": 0.001,
+    "wall_s": 0.009250688832253218,
+    "trace": [
+     [
+      0.0,
+      13
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 13,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008225067052990198,
+    "trace": [
+     [
+      0.0,
+      13
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 13,
+    "time_s": 7.1012e-05,
+    "wall_s": 10.002838273067027,
+    "trace": [
+     [
+      7.1012e-05,
+      13
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 13,
+    "time_s": 0.0,
+    "wall_s": 0.019386719912290573,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 145,
+   "n": 39,
+   "m": 87,
+   "greedy": {
+    "size": 35,
+    "time_s": 0.0053178961388766766
+   },
+   "matching": {
+    "size": 38,
+    "time_s": 0.002097704913467169
+   },
+   "lp": {
+    "size": 30,
+    "time_s": 0.04703626316040754,
+    "lp_optimum": 19.5
+   },
+   "gurobi": {
+    "size": 26,
+    "time_s": 0.010388609953224659,
+    "runtime_s": 0.0027191638946533203,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00013518333435058594,
+      27.0,
+      -1e+100
+     ],
+     [
+      0.0023310184478759766,
+      26.0,
+      22.0
+     ],
+     [
+      0.0027191638946533203,
+      26,
+      26.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 26,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.02919647702947259,
+    "trace": [
+     [
+      0.0,
+      28
+     ],
+     [
+      0.0,
+      27
+     ],
+     [
+      0.0,
+      26
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 26,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007469302974641323,
+    "trace": [
+     [
+      0.0,
+      26
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 26,
+    "time_s": 0.00015883,
+    "wall_s": 10.003156822174788,
+    "trace": [
+     [
+      0.00015883,
+      26
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 26,
+    "time_s": 0.0,
+    "wall_s": 0.008183177094906569,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 153,
+   "n": 13,
+   "m": 22,
+   "greedy": {
+    "size": 10,
+    "time_s": 0.005063292104750872
+   },
+   "matching": {
+    "size": 12,
+    "time_s": 0.00117109389975667
+   },
+   "lp": {
+    "size": 10,
+    "time_s": 0.0380920828320086,
+    "lp_optimum": 6.5
+   },
+   "gurobi": {
+    "size": 9,
+    "time_s": 0.034850466065108776,
+    "runtime_s": 0.0025908946990966797,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0002429485321044922,
+      10.0,
+      -1e+100
+     ],
+     [
+      0.002463102340698242,
+      9.0,
+      -1e+100
+     ],
+     [
+      0.0025908946990966797,
+      9,
+      9.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 9,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.023819738999009132,
+    "trace": [
+     [
+      0.0,
+      9
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 9,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.016502283047884703,
+    "trace": [
+     [
+      0.0,
+      9
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 9,
+    "time_s": 4.9018e-05,
+    "wall_s": 10.003325523342937,
+    "trace": [
+     [
+      4.9018e-05,
+      9
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 9,
+    "time_s": 0.0,
+    "wall_s": 0.019553757272660732,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 154,
+   "n": 18,
+   "m": 33,
+   "greedy": {
+    "size": 16,
+    "time_s": 0.0003319499082863331
+   },
+   "matching": {
+    "size": 18,
+    "time_s": 0.00017371214926242828
+   },
+   "lp": {
+    "size": 10,
+    "time_s": 0.007740355096757412,
+    "lp_optimum": 9.0
+   },
+   "gurobi": {
+    "size": 10,
+    "time_s": 0.009717544075101614,
+    "runtime_s": 0.006899118423461914,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      9.417533874511719e-05,
+      10.0,
+      -1e+100
+     ],
+     [
+      0.006899118423461914,
+      10,
+      10.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 10,
+    "time_s": 0.0,
+    "total_time_s": 0.003,
+    "wall_s": 0.009113455656915903,
+    "trace": [
+     [
+      0.0,
+      10
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 10,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006284765899181366,
+    "trace": [
+     [
+      0.0,
+      11
+     ],
+     [
+      0.0,
+      10
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 10,
+    "time_s": 0.000173654,
+    "wall_s": 10.005093221087009,
+    "trace": [
+     [
+      9.8576e-05,
+      11
+     ],
+     [
+      0.000173654,
+      10
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 10,
+    "time_s": 0.0,
+    "wall_s": 0.021141248755156994,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 160,
+   "n": 22,
+   "m": 42,
+   "greedy": {
+    "size": 20,
+    "time_s": 0.00044765742495656013
+   },
+   "matching": {
+    "size": 20,
+    "time_s": 0.00029538990929722786
+   },
+   "lp": {
+    "size": 13,
+    "time_s": 0.006380245089530945,
+    "lp_optimum": 10.5
+   },
+   "gurobi": {
+    "size": 12,
+    "time_s": 0.008664482273161411,
+    "runtime_s": 0.006261110305786133,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.000125885009765625,
+      12.0,
+      -1e+100
+     ],
+     [
+      0.006261110305786133,
+      12,
+      12.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007722525391727686,
+    "trace": [
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.01750738685950637,
+    "trace": [
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 12,
+    "time_s": 8.8396e-05,
+    "wall_s": 10.002329718787223,
+    "trace": [
+     [
+      8.8396e-05,
+      12
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 12,
+    "time_s": 0.0,
+    "wall_s": 0.005562297999858856,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 5,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 165,
+   "n": 22,
+   "m": 36,
+   "greedy": {
+    "size": 17,
+    "time_s": 0.0003260658122599125
+   },
+   "matching": {
+    "size": 18,
+    "time_s": 0.0003830818459391594
+   },
+   "lp": {
+    "size": 15,
+    "time_s": 0.006347765680402517,
+    "lp_optimum": 11.0
+   },
+   "gurobi": {
+    "size": 14,
+    "time_s": 0.006294182036072016,
+    "runtime_s": 0.0046651363372802734,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      7.796287536621094e-05,
+      15.0,
+      -1e+100
+     ],
+     [
+      0.004602193832397461,
+      14.0,
+      -1e+100
+     ],
+     [
+      0.0046651363372802734,
+      14,
+      14.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010641619097441435,
+    "trace": [
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007304860278964043,
+    "trace": [
+     [
+      0.0,
+      15
+     ],
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 14,
+    "time_s": 0.000110538,
+    "wall_s": 10.0026791440323,
+    "trace": [
+     [
+      6.9398e-05,
+      15
+     ],
+     [
+      0.000110538,
+      14
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 14,
+    "time_s": 0.0,
+    "wall_s": 0.003965482115745544,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 178,
+   "n": 40,
+   "m": 59,
+   "greedy": {
+    "size": 29,
+    "time_s": 0.0044321040622889996
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.002762413118034601
+   },
+   "lp": {
+    "size": 22,
+    "time_s": 0.049581306986510754,
+    "lp_optimum": 19.0
+   },
+   "gurobi": {
+    "size": 20,
+    "time_s": 0.032590268179774284,
+    "runtime_s": 0.012982845306396484,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00013589859008789062,
+      25.0,
+      -1e+100
+     ],
+     [
+      0.01275491714477539,
+      20.0,
+      18.0
+     ],
+     [
+      0.012982845306396484,
+      20,
+      20.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.00961550883948803,
+    "trace": [
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006037282291799784,
+    "trace": [
+     [
+      0.0,
+      21
+     ],
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 20,
+    "time_s": 0.000228088,
+    "wall_s": 10.003080393187702,
+    "trace": [
+     [
+      0.000170941,
+      21
+     ],
+     [
+      0.000228088,
+      20
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 20,
+    "time_s": 0.0,
+    "wall_s": 0.01952941482886672,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 180,
+   "n": 40,
+   "m": 81,
+   "greedy": {
+    "size": 31,
+    "time_s": 0.0004587681032717228
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.0004004170186817646
+   },
+   "lp": {
+    "size": 28,
+    "time_s": 0.017314551398158073,
+    "lp_optimum": 20.0
+   },
+   "gurobi": {
+    "size": 24,
+    "time_s": 0.01326455781236291,
+    "runtime_s": 0.005400180816650391,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      9.417533874511719e-05,
+      27.0,
+      -1e+100
+     ],
+     [
+      0.005050182342529297,
+      25.0,
+      18.0
+     ],
+     [
+      0.0052912235260009766,
+      24.0,
+      24.0
+     ],
+     [
+      0.005400180816650391,
+      24,
+      24.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 24,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006880326196551323,
+    "trace": [
+     [
+      0.0,
+      25
+     ],
+     [
+      0.0,
+      24
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 24,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006306402385234833,
+    "trace": [
+     [
+      0.0,
+      25
+     ],
+     [
+      0.0,
+      24
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 24,
+    "time_s": 0.000200523,
+    "wall_s": 10.003186448011547,
+    "trace": [
+     [
+      0.000158543,
+      25
+     ],
+     [
+      0.000200523,
+      24
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 24,
+    "time_s": 0.0,
+    "wall_s": 0.0032052360475063324,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 189,
+   "n": 27,
+   "m": 49,
+   "greedy": {
+    "size": 21,
+    "time_s": 0.013756489846855402
+   },
+   "matching": {
+    "size": 24,
+    "time_s": 0.013566842768341303
+   },
+   "lp": {
+    "size": 19,
+    "time_s": 0.03198862401768565,
+    "lp_optimum": 13.5
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.011771581135690212,
+    "runtime_s": 0.002321004867553711,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001049041748046875,
+      18.0,
+      -1e+100
+     ],
+     [
+      0.0022668838500976562,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.002321004867553711,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.01054632430896163,
+    "trace": [
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.020159767009317875,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 0.000162956,
+    "wall_s": 10.002321663778275,
+    "trace": [
+     [
+      0.000109829,
+      18
+     ],
+     [
+      0.000162956,
+      17
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.035225104074925184,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 202,
+   "n": 56,
+   "m": 100,
+   "greedy": {
+    "size": 42,
+    "time_s": 0.0005477597005665302
+   },
+   "matching": {
+    "size": 48,
+    "time_s": 0.0004427810199558735
+   },
+   "lp": {
+    "size": 39,
+    "time_s": 0.021245547104626894,
+    "lp_optimum": 28.0
+   },
+   "gurobi": {
+    "size": 33,
+    "time_s": 0.027147060725837946,
+    "runtime_s": 0.008911848068237305,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00013184547424316406,
+      36.0,
+      -1e+100
+     ],
+     [
+      0.00839686393737793,
+      35.0,
+      26.0
+     ],
+     [
+      0.008687973022460938,
+      33.0,
+      33.0
+     ],
+     [
+      0.008911848068237305,
+      33,
+      33.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 33,
+    "time_s": 0.0,
+    "total_time_s": 0.001,
+    "wall_s": 0.012592612765729427,
+    "trace": [
+     [
+      0.0,
+      37
+     ],
+     [
+      0.0,
+      36
+     ],
+     [
+      0.0,
+      35
+     ],
+     [
+      0.0,
+      34
+     ],
+     [
+      0.0,
+      33
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 33,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009974908083677292,
+    "trace": [
+     [
+      0.0,
+      36
+     ],
+     [
+      0.0,
+      35
+     ],
+     [
+      0.0,
+      34
+     ],
+     [
+      0.0,
+      33
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 33,
+    "time_s": 0.000332029,
+    "wall_s": 10.002615551929921,
+    "trace": [
+     [
+      0.000194744,
+      36
+     ],
+     [
+      0.000239636,
+      34
+     ],
+     [
+      0.000332029,
+      33
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 33,
+    "time_s": 0.0,
+    "wall_s": 0.005009473767131567,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 228,
+   "n": 23,
+   "m": 50,
+   "greedy": {
+    "size": 19,
+    "time_s": 0.00037350133061408997
+   },
+   "matching": {
+    "size": 22,
+    "time_s": 0.0004044771194458008
+   },
+   "lp": {
+    "size": 17,
+    "time_s": 0.0034279711544513702,
+    "lp_optimum": 11.5
+   },
+   "gurobi": {
+    "size": 16,
+    "time_s": 0.00302721094340086,
+    "runtime_s": 0.0014748573303222656,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      8.797645568847656e-05,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.0014090538024902344,
+      16.0,
+      -1e+100
+     ],
+     [
+      0.0014748573303222656,
+      16,
+      16.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 16,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010850541293621063,
+    "trace": [
+     [
+      0.0,
+      17
+     ],
+     [
+      0.0,
+      16
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 16,
+    "time_s": 0.003,
+    "total_time_s": 0.003,
+    "wall_s": 0.03679493302479386,
+    "trace": [
+     [
+      0.0,
+      17
+     ],
+     [
+      0.003,
+      16
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 16,
+    "time_s": 0.000147032,
+    "wall_s": 10.002796332817525,
+    "trace": [
+     [
+      9.3927e-05,
+      17
+     ],
+     [
+      0.000147032,
+      16
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 16,
+    "time_s": 0.0,
+    "wall_s": 0.012677485588937998,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 234,
+   "n": 36,
+   "m": 71,
+   "greedy": {
+    "size": 30,
+    "time_s": 0.004878110717982054
+   },
+   "matching": {
+    "size": 34,
+    "time_s": 0.002369872760027647
+   },
+   "lp": {
+    "size": 24,
+    "time_s": 0.0644790860824287,
+    "lp_optimum": 18.0
+   },
+   "gurobi": {
+    "size": 22,
+    "time_s": 0.02999543910846114,
+    "runtime_s": 0.010290861129760742,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001480579376220703,
+      24.0,
+      -1e+100
+     ],
+     [
+      0.006617069244384766,
+      22.0,
+      16.0
+     ],
+     [
+      0.010290861129760742,
+      22,
+      22.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 22,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010815418791025877,
+    "trace": [
+     [
+      0.0,
+      22
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 22,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.005265484098345041,
+    "trace": [
+     [
+      0.0,
+      23
+     ],
+     [
+      0.0,
+      22
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 22,
+    "time_s": 0.000165439,
+    "wall_s": 10.003239168785512,
+    "trace": [
+     [
+      0.000132829,
+      23
+     ],
+     [
+      0.000165439,
+      22
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 22,
+    "time_s": 0.0,
+    "wall_s": 0.02027211617678404,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 237,
+   "n": 22,
+   "m": 50,
+   "greedy": {
+    "size": 18,
+    "time_s": 0.0035509071312844753
+   },
+   "matching": {
+    "size": 18,
+    "time_s": 0.001169300638139248
+   },
+   "lp": {
+    "size": 16,
+    "time_s": 0.06376987928524613,
+    "lp_optimum": 11.0
+   },
+   "gurobi": {
+    "size": 14,
+    "time_s": 0.015818677376955748,
+    "runtime_s": 0.004456043243408203,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00022101402282714844,
+      14.0,
+      -1e+100
+     ],
+     [
+      0.004456043243408203,
+      14,
+      14.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.005577649921178818,
+    "trace": [
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.005708029959350824,
+    "trace": [
+     [
+      0.0,
+      15
+     ],
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 14,
+    "time_s": 0.000144018,
+    "wall_s": 10.002904444932938,
+    "trace": [
+     [
+      8.9056e-05,
+      15
+     ],
+     [
+      0.000144018,
+      14
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 14,
+    "time_s": 0.0,
+    "wall_s": 0.015956013929098845,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 246,
+   "n": 39,
+   "m": 58,
+   "greedy": {
+    "size": 28,
+    "time_s": 0.0006293938495218754
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.0008200923912227154
+   },
+   "lp": {
+    "size": 20,
+    "time_s": 0.009253516793251038,
+    "lp_optimum": 19.5
+   },
+   "gurobi": {
+    "size": 20,
+    "time_s": 0.010209145955741405,
+    "runtime_s": 0.005169868469238281,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      8.082389831542969e-05,
+      25.0,
+      -1e+100
+     ],
+     [
+      0.00510096549987793,
+      20.0,
+      -1e+100
+     ],
+     [
+      0.005169868469238281,
+      20,
+      20.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.00710036838427186,
+    "trace": [
+     [
+      0.0,
+      21
+     ],
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007528312969952822,
+    "trace": [
+     [
+      0.0,
+      21
+     ],
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 20,
+    "time_s": 0.000164866,
+    "wall_s": 10.0028828359209,
+    "trace": [
+     [
+      0.000109281,
+      21
+     ],
+     [
+      0.000164866,
+      20
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 20,
+    "time_s": 0.003,
+    "wall_s": 0.018629671074450016,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 261,
+   "n": 25,
+   "m": 51,
+   "greedy": {
+    "size": 23,
+    "time_s": 0.0003869440406560898
+   },
+   "matching": {
+    "size": 24,
+    "time_s": 0.00029224203899502754
+   },
+   "lp": {
+    "size": 20,
+    "time_s": 0.0041479491628706455,
+    "lp_optimum": 12.5
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.00485649798065424,
+    "runtime_s": 0.0027899742126464844,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      8.296966552734375e-05,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.0022640228271484375,
+      19.0,
+      13.0
+     ],
+     [
+      0.0027899742126464844,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.011991383042186499,
+    "trace": [
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.03453163802623749,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 0.000148881,
+    "wall_s": 10.002945680171251,
+    "trace": [
+     [
+      9.7952e-05,
+      18
+     ],
+     [
+      0.000148881,
+      17
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.03313742019236088,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 270,
+   "n": 32,
+   "m": 70,
+   "greedy": {
+    "size": 29,
+    "time_s": 0.0023348750546574593
+   },
+   "matching": {
+    "size": 30,
+    "time_s": 0.0016121179796755314
+   },
+   "lp": {
+    "size": 24,
+    "time_s": 0.009904817212373018,
+    "lp_optimum": 16.0
+   },
+   "gurobi": {
+    "size": 22,
+    "time_s": 0.02357275690883398,
+    "runtime_s": 0.002357006072998047,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00020194053649902344,
+      22.0,
+      -1e+100
+     ],
+     [
+      0.002357006072998047,
+      22,
+      22.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 22,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.013079645112156868,
+    "trace": [
+     [
+      0.0,
+      23
+     ],
+     [
+      0.0,
+      22
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 22,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010337236803025007,
+    "trace": [
+     [
+      0.0,
+      22
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 22,
+    "time_s": 0.000128742,
+    "wall_s": 10.00370130687952,
+    "trace": [
+     [
+      0.000128742,
+      22
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 22,
+    "time_s": 0.0,
+    "wall_s": 0.012924895156174898,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 306,
+   "n": 50,
+   "m": 92,
+   "greedy": {
+    "size": 44,
+    "time_s": 0.005938343703746796
+   },
+   "matching": {
+    "size": 46,
+    "time_s": 0.002634964883327484
+   },
+   "lp": {
+    "size": 35,
+    "time_s": 0.04563873168081045,
+    "lp_optimum": 25.0
+   },
+   "gurobi": {
+    "size": 30,
+    "time_s": 0.04247995698824525,
+    "runtime_s": 0.005664825439453125,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00022482872009277344,
+      31.0,
+      -1e+100
+     ],
+     [
+      0.0054759979248046875,
+      30.0,
+      30.0
+     ],
+     [
+      0.005664825439453125,
+      30,
+      30.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 30,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.005843521095812321,
+    "trace": [
+     [
+      0.0,
+      30
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 30,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.021406699903309345,
+    "trace": [
+     [
+      0.0,
+      31
+     ],
+     [
+      0.0,
+      30
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 30,
+    "time_s": 0.000196038,
+    "wall_s": 10.002242524642497,
+    "trace": [
+     [
+      0.000165008,
+      31
+     ],
+     [
+      0.000196038,
+      30
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 30,
+    "time_s": 0.0,
+    "wall_s": 0.011585345026105642,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 8,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 309,
+   "n": 51,
+   "m": 99,
+   "greedy": {
+    "size": 42,
+    "time_s": 0.008439736906439066
+   },
+   "matching": {
+    "size": 44,
+    "time_s": 0.0021436987444758415
+   },
+   "lp": {
+    "size": 34,
+    "time_s": 0.015231873374432325,
+    "lp_optimum": 25.5
+   },
+   "gurobi": {
+    "size": 30,
+    "time_s": 0.03215047903358936,
+    "runtime_s": 0.018543004989624023,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001990795135498047,
+      33.0,
+      -1e+100
+     ],
+     [
+      0.012559175491333008,
+      34.0,
+      7.0
+     ],
+     [
+      0.012843132019042969,
+      32.0,
+      7.0
+     ],
+     [
+      0.018305063247680664,
+      30.0,
+      30.0
+     ],
+     [
+      0.018543004989624023,
+      30,
+      30.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 30,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006277712062001228,
+    "trace": [
+     [
+      0.0,
+      32
+     ],
+     [
+      0.0,
+      31
+     ],
+     [
+      0.0,
+      30
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 30,
+    "time_s": 0.001,
+    "total_time_s": 0.001,
+    "wall_s": 0.008725770749151707,
+    "trace": [
+     [
+      0.0,
+      31
+     ],
+     [
+      0.001,
+      30
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 30,
+    "time_s": 0.000217658,
+    "wall_s": 10.002487015910447,
+    "trace": [
+     [
+      0.000179576,
+      31
+     ],
+     [
+      0.000217658,
+      30
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 30,
+    "time_s": 0.0,
+    "wall_s": 0.013616856653243303,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 314,
+   "n": 44,
+   "m": 92,
+   "greedy": {
+    "size": 36,
+    "time_s": 0.005158065818250179
+   },
+   "matching": {
+    "size": 38,
+    "time_s": 0.007479681167751551
+   },
+   "lp": {
+    "size": 30,
+    "time_s": 0.020645434968173504,
+    "lp_optimum": 22.0
+   },
+   "gurobi": {
+    "size": 25,
+    "time_s": 0.03339453134685755,
+    "runtime_s": 0.03133201599121094,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      8.487701416015625e-05,
+      26.0,
+      -1e+100
+     ],
+     [
+      0.0305788516998291,
+      25.0,
+      17.0
+     ],
+     [
+      0.03133201599121094,
+      25,
+      25.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.016498161014169455,
+    "trace": [
+     [
+      0.0,
+      26
+     ],
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008340917062014341,
+    "trace": [
+     [
+      0.0,
+      27
+     ],
+     [
+      0.0,
+      26
+     ],
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 25,
+    "time_s": 0.000232701,
+    "wall_s": 10.003330589272082,
+    "trace": [
+     [
+      0.000185608,
+      27
+     ],
+     [
+      0.000225957,
+      26
+     ],
+     [
+      0.000232701,
+      25
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 25,
+    "time_s": 0.0,
+    "wall_s": 0.0073821027763187885,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 317,
+   "n": 27,
+   "m": 53,
+   "greedy": {
+    "size": 24,
+    "time_s": 0.0005351151339709759
+   },
+   "matching": {
+    "size": 24,
+    "time_s": 0.0004048449918627739
+   },
+   "lp": {
+    "size": 20,
+    "time_s": 0.012245547957718372,
+    "lp_optimum": 13.5
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.006333665922284126,
+    "runtime_s": 0.002743959426879883,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001289844512939453,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.002743959426879883,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007143507711589336,
+    "trace": [
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.003,
+    "wall_s": 0.013414120301604271,
+    "trace": [
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 0.000131198,
+    "wall_s": 10.003970654681325,
+    "trace": [
+     [
+      0.000131198,
+      17
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.004231658764183521,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 322,
+   "n": 20,
+   "m": 37,
+   "greedy": {
+    "size": 17,
+    "time_s": 0.00044794240966439247
+   },
+   "matching": {
+    "size": 18,
+    "time_s": 0.0003788350149989128
+   },
+   "lp": {
+    "size": 15,
+    "time_s": 0.014987985137850046,
+    "lp_optimum": 10.0
+   },
+   "gurobi": {
+    "size": 14,
+    "time_s": 0.011107530910521746,
+    "runtime_s": 0.0051648616790771484,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001590251922607422,
+      15.0,
+      -1e+100
+     ],
+     [
+      0.005071878433227539,
+      14.0,
+      -1e+100
+     ],
+     [
+      0.0051648616790771484,
+      14,
+      14.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009275779128074646,
+    "trace": [
+     [
+      0.0,
+      15
+     ],
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.01258624903857708,
+    "trace": [
+     [
+      0.0,
+      15
+     ],
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 14,
+    "time_s": 0.000112342,
+    "wall_s": 10.002615491859615,
+    "trace": [
+     [
+      7.0596e-05,
+      15
+     ],
+     [
+      0.000112342,
+      14
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 14,
+    "time_s": 0.0,
+    "wall_s": 0.014832204207777977,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 339,
+   "n": 28,
+   "m": 49,
+   "greedy": {
+    "size": 26,
+    "time_s": 0.016432405915111303
+   },
+   "matching": {
+    "size": 28,
+    "time_s": 0.010510919149965048
+   },
+   "lp": {
+    "size": 23,
+    "time_s": 0.009479885920882225,
+    "lp_optimum": 14.0
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.018210002221167088,
+    "runtime_s": 0.005912065505981445,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00022101402282714844,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.005912065505981445,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.00500763114541769,
+    "trace": [
+     [
+      0.0,
+      19
+     ],
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.01,
+    "total_time_s": 0.01,
+    "wall_s": 0.014751369133591652,
+    "trace": [
+     [
+      0.0,
+      19
+     ],
+     [
+      0.0,
+      18
+     ],
+     [
+      0.01,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 0.000198923,
+    "wall_s": 10.003168649040163,
+    "trace": [
+     [
+      0.000123368,
+      19
+     ],
+     [
+      0.000170025,
+      18
+     ],
+     [
+      0.000198923,
+      17
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.01328369416296482,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 342,
+   "n": 24,
+   "m": 45,
+   "greedy": {
+    "size": 20,
+    "time_s": 0.013185324147343636
+   },
+   "matching": {
+    "size": 22,
+    "time_s": 0.010502155870199203
+   },
+   "lp": {
+    "size": 17,
+    "time_s": 0.10272175073623657,
+    "lp_optimum": 12.0
+   },
+   "gurobi": {
+    "size": 15,
+    "time_s": 0.012647856026887894,
+    "runtime_s": 0.003997087478637695,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001430511474609375,
+      16.0,
+      -1e+100
+     ],
+     [
+      0.0039370059967041016,
+      15.0,
+      -1e+100
+     ],
+     [
+      0.003997087478637695,
+      15,
+      15.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 15,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006473194807767868,
+    "trace": [
+     [
+      0.0,
+      16
+     ],
+     [
+      0.0,
+      15
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 15,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.004075317177921534,
+    "trace": [
+     [
+      0.0,
+      15
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 15,
+    "time_s": 9.4785e-05,
+    "wall_s": 10.003167099319398,
+    "trace": [
+     [
+      9.4785e-05,
+      15
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 15,
+    "time_s": 0.0,
+    "wall_s": 0.014238683972507715,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 351,
+   "n": 9,
+   "m": 8,
+   "greedy": {
+    "size": 7,
+    "time_s": 0.00434329966083169
+   },
+   "matching": {
+    "size": 8,
+    "time_s": 0.0014981906861066818
+   },
+   "lp": {
+    "size": 4,
+    "time_s": 0.024570397101342678,
+    "lp_optimum": 4.0
+   },
+   "gurobi": {
+    "size": 4,
+    "time_s": 0.017806399147957563,
+    "runtime_s": 0.0045931339263916016,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00010919570922851562,
+      4.0,
+      -1e+100
+     ],
+     [
+      0.0045931339263916016,
+      4,
+      4.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 4,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010134399402886629,
+    "trace": [
+     [
+      0.0,
+      4
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 4,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.00454032002016902,
+    "trace": [
+     [
+      0.0,
+      4
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 4,
+    "time_s": 2.903e-05,
+    "wall_s": 10.005098977126181,
+    "trace": [
+     [
+      2.903e-05,
+      4
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 4,
+    "time_s": 0.0,
+    "wall_s": 0.01646711491048336,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 354,
+   "n": 66,
+   "m": 112,
+   "greedy": {
+    "size": 49,
+    "time_s": 0.0008369390852749348
+   },
+   "matching": {
+    "size": 56,
+    "time_s": 0.0005243131890892982
+   },
+   "lp": {
+    "size": 42,
+    "time_s": 0.014871663879603148,
+    "lp_optimum": 33.0
+   },
+   "gurobi": {
+    "size": 35,
+    "time_s": 0.015613211318850517,
+    "runtime_s": 0.00628209114074707,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00011610984802246094,
+      42.0,
+      -1e+100
+     ],
+     [
+      0.005526065826416016,
+      39.0,
+      11.0
+     ],
+     [
+      0.006129026412963867,
+      35.0,
+      35.0
+     ],
+     [
+      0.00628209114074707,
+      35,
+      35.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 35,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.005296838935464621,
+    "trace": [
+     [
+      0.0,
+      39
+     ],
+     [
+      0.0,
+      38
+     ],
+     [
+      0.0,
+      37
+     ],
+     [
+      0.0,
+      36
+     ],
+     [
+      0.0,
+      35
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 36,
+    "time_s": 0.0,
+    "total_time_s": 10.0,
+    "wall_s": 10.006464682053775,
+    "trace": [
+     [
+      0.0,
+      38
+     ],
+     [
+      0.0,
+      37
+     ],
+     [
+      0.0,
+      36
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 35,
+    "time_s": 0.000352496,
+    "wall_s": 10.002906423993409,
+    "trace": [
+     [
+      0.000247477,
+      38
+     ],
+     [
+      0.000303135,
+      37
+     ],
+     [
+      0.000309533,
+      36
+     ],
+     [
+      0.000352496,
+      35
+     ]
+    ],
+    "anytime_n": 4
+   },
+   "akiba_iwata": {
+    "size": 35,
+    "time_s": 0.0,
+    "wall_s": 0.02067791623994708,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 363,
+   "n": 20,
+   "m": 49,
+   "greedy": {
+    "size": 17,
+    "time_s": 0.0002539833076298237
+   },
+   "matching": {
+    "size": 20,
+    "time_s": 0.0004277210682630539
+   },
+   "lp": {
+    "size": 15,
+    "time_s": 0.00871115131303668,
+    "lp_optimum": 10.0
+   },
+   "gurobi": {
+    "size": 14,
+    "time_s": 0.006307885050773621,
+    "runtime_s": 0.0018610954284667969,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      7.605552673339844e-05,
+      14.0,
+      -1e+100
+     ],
+     [
+      0.0014681816101074219,
+      15.0,
+      5.0
+     ],
+     [
+      0.0018610954284667969,
+      14,
+      14.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.003,
+    "wall_s": 0.009243014268577099,
+    "trace": [
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007796312216669321,
+    "trace": [
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 14,
+    "time_s": 0.000103482,
+    "wall_s": 10.002807538025081,
+    "trace": [
+     [
+      0.000103482,
+      14
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 14,
+    "time_s": 0.0,
+    "wall_s": 0.021002696361392736,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 371,
+   "n": 15,
+   "m": 26,
+   "greedy": {
+    "size": 12,
+    "time_s": 0.004310388118028641
+   },
+   "matching": {
+    "size": 14,
+    "time_s": 0.0017904657870531082
+   },
+   "lp": {
+    "size": 9,
+    "time_s": 0.029713383875787258,
+    "lp_optimum": 7.5
+   },
+   "gurobi": {
+    "size": 8,
+    "time_s": 0.025792692322283983,
+    "runtime_s": 0.0025451183319091797,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001690387725830078,
+      8.0,
+      -1e+100
+     ],
+     [
+      0.0025451183319091797,
+      8,
+      8.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 8,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009225361049175262,
+    "trace": [
+     [
+      0.0,
+      9
+     ],
+     [
+      0.0,
+      8
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 8,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.004775390960276127,
+    "trace": [
+     [
+      0.0,
+      9
+     ],
+     [
+      0.0,
+      8
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 8,
+    "time_s": 0.000142752,
+    "wall_s": 10.004559010267258,
+    "trace": [
+     [
+      8.4917e-05,
+      9
+     ],
+     [
+      0.000142752,
+      8
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 8,
+    "time_s": 0.0,
+    "wall_s": 0.024093052837997675,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 376,
+   "n": 36,
+   "m": 70,
+   "greedy": {
+    "size": 31,
+    "time_s": 0.0029410971328616142
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.0017267130315303802
+   },
+   "lp": {
+    "size": 24,
+    "time_s": 0.015017029829323292,
+    "lp_optimum": 18.0
+   },
+   "gurobi": {
+    "size": 23,
+    "time_s": 0.01374848885461688,
+    "runtime_s": 0.0032880306243896484,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00012683868408203125,
+      23.0,
+      -1e+100
+     ],
+     [
+      0.002811908721923828,
+      24.0,
+      15.0
+     ],
+     [
+      0.0032880306243896484,
+      23,
+      23.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 23,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.021671530790627003,
+    "trace": [
+     [
+      0.0,
+      24
+     ],
+     [
+      0.0,
+      23
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 23,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010865285061299801,
+    "trace": [
+     [
+      0.0,
+      23
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 23,
+    "time_s": 0.000138674,
+    "wall_s": 10.003585679922253,
+    "trace": [
+     [
+      0.000138674,
+      23
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 23,
+    "time_s": 0.003,
+    "wall_s": 0.02106215711683035,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 390,
+   "n": 26,
+   "m": 51,
+   "greedy": {
+    "size": 23,
+    "time_s": 0.002763716969639063
+   },
+   "matching": {
+    "size": 24,
+    "time_s": 0.0009747282601892948
+   },
+   "lp": {
+    "size": 20,
+    "time_s": 0.0212413826957345,
+    "lp_optimum": 13.0
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.057353359181433916,
+    "runtime_s": 0.018680095672607422,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00023102760314941406,
+      18.0,
+      -1e+100
+     ],
+     [
+      0.01853799819946289,
+      17.0,
+      15.0
+     ],
+     [
+      0.018680095672607422,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.01280633406713605,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.002,
+    "total_time_s": 0.002,
+    "wall_s": 0.007033742032945156,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.002,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 0.000144507,
+    "wall_s": 10.003124868962914,
+    "trace": [
+     [
+      9.3503e-05,
+      18
+     ],
+     [
+      0.000144507,
+      17
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.02174135996028781,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 395,
+   "n": 18,
+   "m": 35,
+   "greedy": {
+    "size": 16,
+    "time_s": 0.00029965490102767944
+   },
+   "matching": {
+    "size": 16,
+    "time_s": 0.00017693312838673592
+   },
+   "lp": {
+    "size": 15,
+    "time_s": 0.004214298911392689,
+    "lp_optimum": 9.0
+   },
+   "gurobi": {
+    "size": 12,
+    "time_s": 0.01272797305136919,
+    "runtime_s": 0.01014399528503418,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      8.797645568847656e-05,
+      12.0,
+      -1e+100
+     ],
+     [
+      0.01014399528503418,
+      12,
+      12.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009188416879624128,
+    "trace": [
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.00879884185269475,
+    "trace": [
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 12,
+    "time_s": 6.6488e-05,
+    "wall_s": 10.003089744132012,
+    "trace": [
+     [
+      6.6488e-05,
+      12
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 12,
+    "time_s": 0.0,
+    "wall_s": 0.004679454956203699,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 411,
+   "n": 36,
+   "m": 68,
+   "greedy": {
+    "size": 29,
+    "time_s": 0.004199321381747723
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.0013597961515188217
+   },
+   "lp": {
+    "size": 24,
+    "time_s": 0.12213740963488817,
+    "lp_optimum": 18.0
+   },
+   "gurobi": {
+    "size": 20,
+    "time_s": 0.028267008252441883,
+    "runtime_s": 0.010499954223632812,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00015497207641601562,
+      22.0,
+      -1e+100
+     ],
+     [
+      0.007241964340209961,
+      20.0,
+      18.0
+     ],
+     [
+      0.010499954223632812,
+      20,
+      20.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.006592306774109602,
+    "trace": [
+     [
+      0.0,
+      22
+     ],
+     [
+      0.0,
+      21
+     ],
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009136578999459743,
+    "trace": [
+     [
+      0.0,
+      21
+     ],
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 20,
+    "time_s": 0.000169001,
+    "wall_s": 10.003201990853995,
+    "trace": [
+     [
+      0.00011667,
+      21
+     ],
+     [
+      0.000169001,
+      20
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 20,
+    "time_s": 0.0,
+    "wall_s": 0.019666391424834728,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 427,
+   "n": 32,
+   "m": 57,
+   "greedy": {
+    "size": 31,
+    "time_s": 0.0030989861115813255
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.0033390801399946213
+   },
+   "lp": {
+    "size": 20,
+    "time_s": 0.08521068515256047,
+    "lp_optimum": 16.0
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.01160828210413456,
+    "runtime_s": 0.003343820571899414,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001678466796875,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.003343820571899414,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.00901358388364315,
+    "trace": [
+     [
+      0.0,
+      19
+     ],
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010436313226819038,
+    "trace": [
+     [
+      0.0,
+      19
+     ],
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 0.000319513,
+    "wall_s": 10.004085959866643,
+    "trace": [
+     [
+      0.000153234,
+      19
+     ],
+     [
+      0.000246586,
+      18
+     ],
+     [
+      0.000319513,
+      17
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.011278206016868353,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 448,
+   "n": 26,
+   "m": 57,
+   "greedy": {
+    "size": 23,
+    "time_s": 0.004392171278595924
+   },
+   "matching": {
+    "size": 24,
+    "time_s": 0.00274825282394886
+   },
+   "lp": {
+    "size": 17,
+    "time_s": 0.016420328989624977,
+    "lp_optimum": 13.0
+   },
+   "gurobi": {
+    "size": 16,
+    "time_s": 0.010096372105181217,
+    "runtime_s": 0.0032470226287841797,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00011610984802246094,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.002910137176513672,
+      16.0,
+      12.0
+     ],
+     [
+      0.0032470226287841797,
+      16,
+      16.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 16,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.02307613892480731,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ],
+     [
+      0.0,
+      16
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 16,
+    "time_s": 0.0,
+    "total_time_s": 0.003,
+    "wall_s": 0.007865363731980324,
+    "trace": [
+     [
+      0.0,
+      16
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 16,
+    "time_s": 0.000103585,
+    "wall_s": 10.002879112027586,
+    "trace": [
+     [
+      0.000103585,
+      16
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 16,
+    "time_s": 0.0,
+    "wall_s": 0.012809623964130878,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 449,
+   "n": 26,
+   "m": 58,
+   "greedy": {
+    "size": 25,
+    "time_s": 0.0005180169828236103
+   },
+   "matching": {
+    "size": 26,
+    "time_s": 0.0007592570036649704
+   },
+   "lp": {
+    "size": 18,
+    "time_s": 0.016520727891474962,
+    "lp_optimum": 13.0
+   },
+   "gurobi": {
+    "size": 16,
+    "time_s": 0.013066449202597141,
+    "runtime_s": 0.007003068923950195,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00011706352233886719,
+      18.0,
+      -1e+100
+     ],
+     [
+      0.006211042404174805,
+      19.0,
+      8.0
+     ],
+     [
+      0.006381988525390625,
+      17.0,
+      8.0
+     ],
+     [
+      0.006803035736083984,
+      16.0,
+      16.0
+     ],
+     [
+      0.007003068923950195,
+      16,
+      16.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 16,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.017250432167202234,
+    "trace": [
+     [
+      0.0,
+      17
+     ],
+     [
+      0.0,
+      16
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 16,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.007631560787558556,
+    "trace": [
+     [
+      0.0,
+      16
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 16,
+    "time_s": 9.9987e-05,
+    "wall_s": 10.002842144109309,
+    "trace": [
+     [
+      9.9987e-05,
+      16
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 16,
+    "time_s": 0.0,
+    "wall_s": 0.02635807590559125,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 453,
+   "n": 20,
+   "m": 39,
+   "greedy": {
+    "size": 16,
+    "time_s": 0.006452806293964386
+   },
+   "matching": {
+    "size": 16,
+    "time_s": 0.0025681830011308193
+   },
+   "lp": {
+    "size": 14,
+    "time_s": 0.08204478630796075,
+    "lp_optimum": 10.0
+   },
+   "gurobi": {
+    "size": 12,
+    "time_s": 0.043233603704720736,
+    "runtime_s": 0.009280920028686523,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001938343048095703,
+      12.0,
+      -1e+100
+     ],
+     [
+      0.008497953414916992,
+      13.0,
+      3.0
+     ],
+     [
+      0.009280920028686523,
+      12,
+      12.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.020529743749648333,
+    "trace": [
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 12,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009840527083724737,
+    "trace": [
+     [
+      0.0,
+      13
+     ],
+     [
+      0.0,
+      12
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 12,
+    "time_s": 0.00010463,
+    "wall_s": 10.002634703647345,
+    "trace": [
+     [
+      7.5274e-05,
+      13
+     ],
+     [
+      0.00010463,
+      12
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 12,
+    "time_s": 0.0,
+    "wall_s": 0.02107265079393983,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 458,
+   "n": 34,
+   "m": 77,
+   "greedy": {
+    "size": 30,
+    "time_s": 0.0006137280724942684
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.0007546879351139069
+   },
+   "lp": {
+    "size": 26,
+    "time_s": 0.014797820709645748,
+    "lp_optimum": 17.0
+   },
+   "gurobi": {
+    "size": 21,
+    "time_s": 0.01208528596907854,
+    "runtime_s": 0.0068051815032958984,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      9.703636169433594e-05,
+      22.0,
+      -1e+100
+     ],
+     [
+      0.006698131561279297,
+      21.0,
+      21.0
+     ],
+     [
+      0.0068051815032958984,
+      21,
+      21.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 21,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008887669071555138,
+    "trace": [
+     [
+      0.0,
+      22
+     ],
+     [
+      0.0,
+      21
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 21,
+    "time_s": 0.007,
+    "total_time_s": 0.007,
+    "wall_s": 0.016058373730629683,
+    "trace": [
+     [
+      0.0,
+      23
+     ],
+     [
+      0.0,
+      22
+     ],
+     [
+      0.007,
+      21
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 21,
+    "time_s": 0.000278927,
+    "wall_s": 10.003460488747805,
+    "trace": [
+     [
+      0.000162318,
+      23
+     ],
+     [
+      0.000192527,
+      22
+     ],
+     [
+      0.000278927,
+      21
+     ]
+    ],
+    "anytime_n": 3
+   },
+   "akiba_iwata": {
+    "size": 21,
+    "time_s": 0.0,
+    "wall_s": 0.004502138122916222,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 488,
+   "n": 35,
+   "m": 61,
+   "greedy": {
+    "size": 29,
+    "time_s": 0.01058140816166997
+   },
+   "matching": {
+    "size": 32,
+    "time_s": 0.003912168089300394
+   },
+   "lp": {
+    "size": 26,
+    "time_s": 0.11222537513822317,
+    "lp_optimum": 17.5
+   },
+   "gurobi": {
+    "size": 23,
+    "time_s": 0.04116666130721569,
+    "runtime_s": 0.01702594757080078,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001990795135498047,
+      23.0,
+      -1e+100
+     ],
+     [
+      0.01702594757080078,
+      23,
+      23.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 23,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009270558599382639,
+    "trace": [
+     [
+      0.0,
+      24
+     ],
+     [
+      0.0,
+      23
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 23,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.01323658088222146,
+    "trace": [
+     [
+      0.0,
+      24
+     ],
+     [
+      0.0,
+      23
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 23,
+    "time_s": 0.000157869,
+    "wall_s": 10.00240287464112,
+    "trace": [
+     [
+      0.000123461,
+      24
+     ],
+     [
+      0.000157869,
+      23
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 23,
+    "time_s": 0.0,
+    "wall_s": 0.009572144132107496,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 508,
+   "n": 41,
+   "m": 88,
+   "greedy": {
+    "size": 37,
+    "time_s": 0.004637363366782665
+   },
+   "matching": {
+    "size": 38,
+    "time_s": 0.002753184176981449
+   },
+   "lp": {
+    "size": 31,
+    "time_s": 0.04984111897647381,
+    "lp_optimum": 20.5
+   },
+   "gurobi": {
+    "size": 25,
+    "time_s": 0.04128276463598013,
+    "runtime_s": 0.011754989624023438,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00015091896057128906,
+      28.0,
+      -1e+100
+     ],
+     [
+      0.0076770782470703125,
+      27.0,
+      25.0
+     ],
+     [
+      0.007739067077636719,
+      26.0,
+      25.0
+     ],
+     [
+      0.011514902114868164,
+      25.0,
+      25.0
+     ],
+     [
+      0.011754989624023438,
+      25,
+      25.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.026812790893018246,
+    "trace": [
+     [
+      0.0,
+      26
+     ],
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 25,
+    "time_s": 0.004,
+    "total_time_s": 0.004,
+    "wall_s": 0.010244135279208422,
+    "trace": [
+     [
+      0.0,
+      26
+     ],
+     [
+      0.004,
+      25
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 25,
+    "time_s": 0.000305577,
+    "wall_s": 10.002867308910936,
+    "trace": [
+     [
+      0.000167808,
+      26
+     ],
+     [
+      0.000305577,
+      25
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 25,
+    "time_s": 0.0,
+    "wall_s": 0.013329129200428724,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 13,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 509,
+   "n": 29,
+   "m": 65,
+   "greedy": {
+    "size": 28,
+    "time_s": 0.00037947017699480057
+   },
+   "matching": {
+    "size": 28,
+    "time_s": 0.0004508383572101593
+   },
+   "lp": {
+    "size": 23,
+    "time_s": 0.007621418219059706,
+    "lp_optimum": 14.5
+   },
+   "gurobi": {
+    "size": 20,
+    "time_s": 0.013917211908847094,
+    "runtime_s": 0.007645130157470703,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00010609626770019531,
+      21.0,
+      -1e+100
+     ],
+     [
+      0.007521152496337891,
+      20.0,
+      20.0
+     ],
+     [
+      0.007645130157470703,
+      20,
+      20.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.003,
+    "wall_s": 0.012129463255405426,
+    "trace": [
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 20,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.011846715118736029,
+    "trace": [
+     [
+      0.0,
+      20
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 20,
+    "time_s": 0.000115528,
+    "wall_s": 10.002671170048416,
+    "trace": [
+     [
+      0.000115528,
+      20
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 20,
+    "time_s": 0.0,
+    "wall_s": 0.010261644143611193,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 527,
+   "n": 21,
+   "m": 53,
+   "greedy": {
+    "size": 19,
+    "time_s": 0.00035071419551968575
+   },
+   "matching": {
+    "size": 20,
+    "time_s": 0.00022455723956227303
+   },
+   "lp": {
+    "size": 15,
+    "time_s": 0.011653219815343618,
+    "lp_optimum": 10.5
+   },
+   "gurobi": {
+    "size": 14,
+    "time_s": 0.008142648730427027,
+    "runtime_s": 0.0021200180053710938,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00010991096496582031,
+      14.0,
+      -1e+100
+     ],
+     [
+      0.0021200180053710938,
+      14,
+      14.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.011038581375032663,
+    "trace": [
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 14,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008622286841273308,
+    "trace": [
+     [
+      0.0,
+      14
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 14,
+    "time_s": 9.5094e-05,
+    "wall_s": 10.003205773886293,
+    "trace": [
+     [
+      9.5094e-05,
+      14
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 14,
+    "time_s": 0.0,
+    "wall_s": 0.008914089761674404,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 543,
+   "n": 41,
+   "m": 79,
+   "greedy": {
+    "size": 34,
+    "time_s": 0.00665998924523592
+   },
+   "matching": {
+    "size": 38,
+    "time_s": 0.004135267809033394
+   },
+   "lp": {
+    "size": 29,
+    "time_s": 0.03618717100471258,
+    "lp_optimum": 20.5
+   },
+   "gurobi": {
+    "size": 26,
+    "time_s": 0.03333659563213587,
+    "runtime_s": 0.009174108505249023,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0001430511474609375,
+      27.0,
+      -1e+100
+     ],
+     [
+      0.009042978286743164,
+      26.0,
+      -1e+100
+     ],
+     [
+      0.009174108505249023,
+      26,
+      26.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 26,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.015836068894714117,
+    "trace": [
+     [
+      0.0,
+      27
+     ],
+     [
+      0.0,
+      26
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 26,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.005826076027005911,
+    "trace": [
+     [
+      0.0,
+      26
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 26,
+    "time_s": 0.000162659,
+    "wall_s": 10.003568110987544,
+    "trace": [
+     [
+      0.000162659,
+      26
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 26,
+    "time_s": 0.0,
+    "wall_s": 0.018588311038911343,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 550,
+   "n": 52,
+   "m": 98,
+   "greedy": {
+    "size": 44,
+    "time_s": 0.0023703817278146744
+   },
+   "matching": {
+    "size": 46,
+    "time_s": 0.0014657690189778805
+   },
+   "lp": {
+    "size": 38,
+    "time_s": 0.053246397990733385,
+    "lp_optimum": 26.0
+   },
+   "gurobi": {
+    "size": 31,
+    "time_s": 0.01719275675714016,
+    "runtime_s": 0.008208036422729492,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00015807151794433594,
+      32.0,
+      -1e+100
+     ],
+     [
+      0.007070064544677734,
+      31.0,
+      9.0
+     ],
+     [
+      0.008208036422729492,
+      31,
+      31.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 31,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.010931297205388546,
+    "trace": [
+     [
+      0.0,
+      32
+     ],
+     [
+      0.0,
+      31
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 31,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.0063433269970119,
+    "trace": [
+     [
+      0.0,
+      33
+     ],
+     [
+      0.0,
+      32
+     ],
+     [
+      0.0,
+      31
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 31,
+    "time_s": 0.000221069,
+    "wall_s": 10.003264400176704,
+    "trace": [
+     [
+      0.000177412,
+      33
+     ],
+     [
+      0.000221069,
+      31
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 31,
+    "time_s": 0.0,
+    "wall_s": 0.008346545044332743,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 554,
+   "n": 26,
+   "m": 46,
+   "greedy": {
+    "size": 20,
+    "time_s": 0.002692178823053837
+   },
+   "matching": {
+    "size": 24,
+    "time_s": 0.0009997016750276089
+   },
+   "lp": {
+    "size": 19,
+    "time_s": 0.014198065735399723,
+    "lp_optimum": 13.0
+   },
+   "gurobi": {
+    "size": 17,
+    "time_s": 0.042712157126516104,
+    "runtime_s": 0.010986804962158203,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      8.678436279296875e-05,
+      18.0,
+      -1e+100
+     ],
+     [
+      0.010921955108642578,
+      17.0,
+      -1e+100
+     ],
+     [
+      0.010986804962158203,
+      17,
+      17.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.004133137874305248,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 17,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.0059229424223303795,
+    "trace": [
+     [
+      0.0,
+      18
+     ],
+     [
+      0.0,
+      17
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 17,
+    "time_s": 0.00018025,
+    "wall_s": 10.003716188948601,
+    "trace": [
+     [
+      0.000109782,
+      18
+     ],
+     [
+      0.00018025,
+      17
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 17,
+    "time_s": 0.0,
+    "wall_s": 0.05035432893782854,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 556,
+   "n": 52,
+   "m": 99,
+   "greedy": {
+    "size": 42,
+    "time_s": 0.0006995857693254948
+   },
+   "matching": {
+    "size": 46,
+    "time_s": 0.0004241829738020897
+   },
+   "lp": {
+    "size": 37,
+    "time_s": 0.03468866320326924,
+    "lp_optimum": 26.0
+   },
+   "gurobi": {
+    "size": 31,
+    "time_s": 0.026874131988734007,
+    "runtime_s": 0.018115997314453125,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      6.29425048828125e-05,
+      33.0,
+      -1e+100
+     ],
+     [
+      0.01793503761291504,
+      32.0,
+      31.0
+     ],
+     [
+      0.01800990104675293,
+      31.0,
+      31.0
+     ],
+     [
+      0.018115997314453125,
+      31,
+      31.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 31,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.014565400779247284,
+    "trace": [
+     [
+      0.0,
+      34
+     ],
+     [
+      0.0,
+      33
+     ],
+     [
+      0.0,
+      32
+     ],
+     [
+      0.0,
+      31
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 31,
+    "time_s": 0.003,
+    "total_time_s": 0.003,
+    "wall_s": 0.014782945159822702,
+    "trace": [
+     [
+      0.0,
+      32
+     ],
+     [
+      0.003,
+      31
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 31,
+    "time_s": 0.000183492,
+    "wall_s": 10.00348987383768,
+    "trace": [
+     [
+      0.000183492,
+      31
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 31,
+    "time_s": 0.0,
+    "wall_s": 0.0025668409653007984,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 572,
+   "n": 47,
+   "m": 82,
+   "greedy": {
+    "size": 44,
+    "time_s": 0.002946459222584963
+   },
+   "matching": {
+    "size": 46,
+    "time_s": 0.0018853950314223766
+   },
+   "lp": {
+    "size": 37,
+    "time_s": 0.03366302466019988,
+    "lp_optimum": 23.5
+   },
+   "gurobi": {
+    "size": 25,
+    "time_s": 0.028526846785098314,
+    "runtime_s": 0.013257980346679688,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.0031828880310058594,
+      25.0,
+      -1e+100
+     ],
+     [
+      0.013257980346679688,
+      25,
+      25.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.011147803626954556,
+    "trace": [
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.0069501702673733234,
+    "trace": [
+     [
+      0.0,
+      27
+     ],
+     [
+      0.0,
+      26
+     ],
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 25,
+    "time_s": 0.000195191,
+    "wall_s": 10.00341362785548,
+    "trace": [
+     [
+      0.000148844,
+      26
+     ],
+     [
+      0.000195191,
+      25
+     ]
+    ],
+    "anytime_n": 2
+   },
+   "akiba_iwata": {
+    "size": 25,
+    "time_s": 0.0,
+    "wall_s": 0.022475955076515675,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 579,
+   "n": 38,
+   "m": 75,
+   "greedy": {
+    "size": 31,
+    "time_s": 0.0006803916767239571
+   },
+   "matching": {
+    "size": 34,
+    "time_s": 0.0005162423476576805
+   },
+   "lp": {
+    "size": 28,
+    "time_s": 0.017608059104532003,
+    "lp_optimum": 19.0
+   },
+   "gurobi": {
+    "size": 25,
+    "time_s": 0.013446197845041752,
+    "runtime_s": 0.005775928497314453,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00011491775512695312,
+      26.0,
+      -1e+100
+     ],
+     [
+      0.005572080612182617,
+      25.0,
+      23.0
+     ],
+     [
+      0.005775928497314453,
+      25,
+      25.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.011550108902156353,
+    "trace": [
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 25,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.009731641970574856,
+    "trace": [
+     [
+      0.0,
+      25
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 25,
+    "time_s": 0.000137801,
+    "wall_s": 10.002381834201515,
+    "trace": [
+     [
+      0.000137801,
+      25
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 25,
+    "time_s": 0.0,
+    "wall_s": 0.0029850401915609837,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  },
+  {
+   "idx": 598,
+   "n": 51,
+   "m": 95,
+   "greedy": {
+    "size": 42,
+    "time_s": 0.004449902102351189
+   },
+   "matching": {
+    "size": 48,
+    "time_s": 0.0015339967794716358
+   },
+   "lp": {
+    "size": 30,
+    "time_s": 0.02467213897034526,
+    "lp_optimum": 25.5
+   },
+   "gurobi": {
+    "size": 28,
+    "time_s": 0.018563982099294662,
+    "runtime_s": 0.005211830139160156,
+    "optimal_proven": true,
+    "gap": 0.0,
+    "trace": [
+     [
+      0.00022983551025390625,
+      28.0,
+      -1e+100
+     ],
+     [
+      0.005211830139160156,
+      28,
+      28.0
+     ]
+    ],
+    "solver": "gurobi"
+   },
+   "numvc": {
+    "size": 28,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.008593001868575811,
+    "trace": [
+     [
+      0.0,
+      29
+     ],
+     [
+      0.0,
+      28
+     ]
+    ]
+   },
+   "fastvc": {
+    "size": 28,
+    "time_s": 0.0,
+    "total_time_s": 0.0,
+    "wall_s": 0.017793355975300074,
+    "trace": [
+     [
+      0.0,
+      28
+     ]
+    ]
+   },
+   "fastwvc": {
+    "size": 28,
+    "time_s": 0.000171432,
+    "wall_s": 10.002561882603914,
+    "trace": [
+     [
+      0.000171432,
+      28
+     ]
+    ],
+    "anytime_n": 1
+   },
+   "akiba_iwata": {
+    "size": 28,
+    "time_s": 0.0,
+    "wall_s": 0.013368769083172083,
+    "exact": true,
+    "truncated": false,
+    "feasible": true,
+    "solver_feasible": true,
+    "nodes": 1,
+    "solver": "pace_vc"
+   }
+  }
+ ],
+ "summary": {
+  "akiba_iwata": {
+   "count": 60,
+   "coverage": "60/60",
+   "n_common": 59,
+   "common_subset_available": true,
+   "avg_size": 20.0,
+   "avg_time_s": 0.0001,
+   "median_size": 20.0,
+   "avg_gap_vs_gurobi10s": 0.0,
+   "n_gap_pairs": 60,
+   "best_size": 1.0,
+   "avg_size_common": 20.322033898305083,
+   "median_size_common": 20.0,
+   "avg_time_common": 0.00010169491525423729,
+   "avg_gap_vs_gurobi10s_common": 0.0,
+   "n_exact": 60,
+   "n_truncated": 0,
+   "n_feasible": 60
+  },
+  "fastvc": {
+   "count": 60,
+   "coverage": "60/60",
+   "n_common": 59,
+   "common_subset_available": true,
+   "avg_size": 20.016666666666666,
+   "avg_time_s": 0.00055,
+   "median_size": 20.0,
+   "avg_gap_vs_gurobi10s": 0.016666666666666666,
+   "n_gap_pairs": 60,
+   "best_size": 1.0,
+   "avg_size_common": 20.338983050847457,
+   "median_size_common": 20.0,
+   "avg_time_common": 0.0005593220338983051,
+   "avg_gap_vs_gurobi10s_common": 0.01694915254237288
+  },
+  "fastwvc": {
+   "count": 60,
+   "avg_size": 20.0,
+   "avg_time_s": 0.00016030168333333334,
+   "median_size": 20.0,
+   "best_size": 1.0,
+   "anytime_traced": 59
+  },
+  "greedy": {
+   "count": 60,
+   "coverage": "60/60",
+   "n_common": 59,
+   "common_subset_available": true,
+   "avg_size": 27.35,
+   "avg_time_s": 0.0035939560970291496,
+   "median_size": 28.0,
+   "avg_gap_vs_gurobi10s": 7.35,
+   "n_gap_pairs": 60,
+   "best_size": 1.0,
+   "avg_size_common": 27.796610169491526,
+   "median_size_common": 28.0,
+   "avg_time_common": 0.003650699623749923,
+   "avg_gap_vs_gurobi10s_common": 7.47457627118644
+  },
+  "gurobi": {
+   "count": 60,
+   "coverage": "60/60",
+   "n_common": 59,
+   "common_subset_available": true,
+   "avg_size": 20.0,
+   "avg_time_s": 0.019299744302406906,
+   "median_size": 20.0,
+   "avg_gap_vs_gurobi10s": 0.0,
+   "n_gap_pairs": 60,
+   "best_size": 1.0,
+   "avg_size_common": 20.322033898305083,
+   "median_size_common": 20.0,
+   "avg_time_common": 0.019480566273175053,
+   "avg_gap_vs_gurobi10s_common": 0.0
+  },
+  "lp": {
+   "count": 60,
+   "coverage": "60/60",
+   "n_common": 59,
+   "common_subset_available": true,
+   "avg_size": 22.866666666666667,
+   "avg_time_s": 0.030079830003281436,
+   "median_size": 22.5,
+   "avg_gap_vs_gurobi10s": 2.8666666666666667,
+   "n_gap_pairs": 60,
+   "best_size": 1.0,
+   "avg_size_common": 23.23728813559322,
+   "median_size_common": 23.0,
+   "avg_time_common": 0.030234037298646012,
+   "avg_gap_vs_gurobi10s_common": 2.9152542372881354
+  },
+  "matching": {
+   "count": 60,
+   "coverage": "60/60",
+   "n_common": 59,
+   "common_subset_available": true,
+   "avg_size": 29.766666666666666,
+   "avg_time_s": 0.0019507569183285038,
+   "median_size": 31.0,
+   "avg_gap_vs_gurobi10s": 9.766666666666667,
+   "n_gap_pairs": 60,
+   "best_size": 2.0,
+   "avg_size_common": 30.23728813559322,
+   "median_size_common": 32.0,
+   "avg_time_common": 0.0019817016624166803,
+   "avg_gap_vs_gurobi10s_common": 9.915254237288135
+  },
+  "numvc": {
+   "count": 60,
+   "coverage": "60/60",
+   "n_common": 59,
+   "common_subset_available": true,
+   "avg_size": 20.0,
+   "avg_time_s": 0.0,
+   "median_size": 20.0,
+   "avg_gap_vs_gurobi10s": 0.0,
+   "n_gap_pairs": 60,
+   "best_size": 1.0,
+   "avg_size_common": 20.322033898305083,
+   "median_size_common": 20.0,
+   "avg_time_common": 0.0,
+   "avg_gap_vs_gurobi10s_common": 0.0
+  },
+  "_meta": {
+   "n_graphs": 60,
+   "gurobi_solved": 60,
+   "reference_solver": "gurobi",
+   "n_common": 59,
+   "common_subset_available": true
+  }
+ },
+ "ai_meta": {
+  "solver": "pace_vc (PACE 2019 exact-track entry, anytime-patched)",
+  "cutoff_s": 10,
+  "seed": 0,
+  "time_wall_s": 0.6322216987609863
+ }
+}
