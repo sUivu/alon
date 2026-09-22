@@ -1,0 +1,250 @@
+{
+ "checkpoint": "ckpts/alon_a_fair_C0_ENZYMES_seed0_screen_ep200/alon_a_fair.pt",
+ "candidate": "C0",
+ "spec": {
+  "residual": "signed",
+  "norm": "pernode",
+  "mu_channel": false,
+  "label": "baseline_optgnn_style"
+ },
+ "config": {
+  "candidate": "C0",
+  "dataset": "ENZYMES",
+  "epochs": 200,
+  "seed": 0,
+  "lr": 0.001,
+  "batch_size": 32,
+  "penalty": 1.0,
+  "lambda_freq": 10,
+  "lambda_ratio": 0.05,
+  "grad_clip": 5.0,
+  "rank": 32,
+  "num_layers": 16,
+  "lift_ratio": 0.1,
+  "hidden_channels": 32,
+  "mu_hidden": 32,
+  "mu_layers": 2,
+  "train_fraction": 0.8,
+  "split_seed": 0,
+  "data_seed": 0,
+  "num_graphs": 2000,
+  "gen_n": null,
+  "gen_m": null,
+  "gen_p": null
+ },
+ "eval_dataset": "ENZYMES",
+ "ran_adaptive": true,
+ "has_mu_phi": false,
+ "n_hyperplanes": 1000,
+ "env": {
+  "torch": "2.6.0+cu124",
+  "python": "3.10.12"
+ },
+ "command": [
+  "scripts/eval_alon_a_fair.py",
+  "--checkpoint",
+  "ckpts/alon_a_fair_C0_ENZYMES_seed0_screen_ep200/alon_a_fair.pt",
+  "--dataset",
+  "ENZYMES",
+  "--splits",
+  "test",
+  "--limit",
+  "5",
+  "--ks",
+  "0",
+  "--rho_sweep",
+  "0.2",
+  "--out",
+  "/tmp/smoke_eval.json"
+ ],
+ "splits": {
+  "test": {
+   "n_graphs": 5,
+   "avg_n": 27.0,
+   "reference": {
+    "ref_name": "ENZYMES",
+    "avg_size_full": 20.0,
+    "avg_size_common": 20.322033898305083,
+    "coverage": "60/60",
+    "n_eval_graphs": 5,
+    "n_exact_on_eval": 5,
+    "coverage_on_eval": "5/5",
+    "ref_eval_mean_exact": 16.2
+   },
+   "runs": [
+    {
+     "config": "statusquo",
+     "K": null,
+     "rho": 0.0,
+     "n_graphs": 5,
+     "mean_repaired": 16.2,
+     "median_repaired": 14.0,
+     "std_repaired": 6.64529909033446,
+     "mean_raw": 16.2,
+     "frac_infeasible_raw": 0.0,
+     "mean_raw_uncovered": 0.0,
+     "max_violation_after_repair": 0,
+     "per_graph": [
+      {
+       "idx": 237,
+       "n": 22,
+       "m": 50,
+       "raw_size": 14,
+       "repaired_size": 14,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 411,
+       "n": 36,
+       "m": 68,
+       "raw_size": 20,
+       "repaired_size": 20,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 20,
+       "n": 42,
+       "m": 90,
+       "raw_size": 27,
+       "repaired_size": 27,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 453,
+       "n": 20,
+       "m": 39,
+       "raw_size": 12,
+       "repaired_size": 12,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 371,
+       "n": 15,
+       "m": 26,
+       "raw_size": 8,
+       "repaired_size": 8,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      }
+     ],
+     "mu_norm_traj": [
+      0.0
+     ],
+     "resid_traj": [
+      3.7782785892486572
+     ],
+     "use_mu_phi": false,
+     "mean_time_s_per_graph": 0.046879863180220124,
+     "wall_s": 0.23439931590110064,
+     "gap_vs_ref": 0.0,
+     "delta_vs_ref": 0.0
+    },
+    {
+     "config": "asc_K0_r0.2",
+     "K": 0,
+     "rho": 0.2,
+     "n_graphs": 5,
+     "mean_repaired": 16.2,
+     "median_repaired": 14.0,
+     "std_repaired": 6.64529909033446,
+     "mean_raw": 16.2,
+     "frac_infeasible_raw": 0.0,
+     "mean_raw_uncovered": 0.0,
+     "max_violation_after_repair": 0,
+     "per_graph": [
+      {
+       "idx": 237,
+       "n": 22,
+       "m": 50,
+       "raw_size": 14,
+       "repaired_size": 14,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 411,
+       "n": 36,
+       "m": 68,
+       "raw_size": 20,
+       "repaired_size": 20,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 20,
+       "n": 42,
+       "m": 90,
+       "raw_size": 27,
+       "repaired_size": 27,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 453,
+       "n": 20,
+       "m": 39,
+       "raw_size": 12,
+       "repaired_size": 12,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      },
+      {
+       "idx": 371,
+       "n": 15,
+       "m": 26,
+       "raw_size": 8,
+       "repaired_size": 8,
+       "infeasible_raw": 0,
+       "raw_uncovered": 0,
+       "repair_added": 0,
+       "violation_after_repair": 0,
+       "mu_norm": 0.0
+      }
+     ],
+     "mu_norm_traj": [
+      0.0
+     ],
+     "resid_traj": [
+      3.7782785892486572
+     ],
+     "use_mu_phi": false,
+     "mean_time_s_per_graph": 0.012696328014135361,
+     "wall_s": 0.0634816400706768,
+     "gap_vs_ref": 0.0,
+     "delta_vs_ref": 0.0
+    }
+   ]
+  }
+ }
+}
