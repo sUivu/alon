@@ -28,14 +28,17 @@ Network). Paper↔code name mapping:
 | +AL on GCNN | `--model_type ALONGCNN` |
 | +AL on GatedGCNN | `--model_type ALONGatedGCNN` |
 
-The four `+AL` backbone variants instantiate class `ALON_Hybrid_Network` (in
-`model/models.py`, trained by `train.py`/`train_dp.py`).
+The four `+AL` backbone variants are built in `model/models.py` — class
+`ALON_Hybrid_Network` (GatedGCNN uses `ALONGatedGCNN_Network`) — and are
+trained by `train.py` via `--model_type ALONGIN/ALONGAT/ALONGCNN/ALONGatedGCNN`
+(see §2).
 
 ## Repository layout
 
 ```
-train.py                  raw-backbone training (GIN/GAT/GCNN/GatedGCNN)
-train_dp.py               ALM-variant training (ALONGIN/ALONGAT/ALONGCNN/ALONGatedGCNN)
+train.py                  backbone training, dispatched by --model_type
+                          (raw GIN/GAT/GCNN/GatedGCNN; +AL ALONGIN/ALONGAT/ALONGCNN/ALONGatedGCNN)
+train_dp.py               standalone ALONGNN training (single ALM model; ignores --model_type)
 train_alon_upgrade.py     shared dataset specs / helpers for the ALON harness
 train_baseline.py         OptGNN/LiftMP baseline (implemented in our framework, model/baselines.py)
 problem/                  objective, constraint, residual (losses.py), SDP/Gurobi refs
@@ -116,8 +119,9 @@ python -u scripts/matrix_fill/train_t1.py --arm T1 --seed 1 --epochs 200 --datas
 ```
 
 `--dataset` choices: `{ER,BA,WS,HK}_{50_100,100_200,400_500}`,
-`IMDB-BINARY`, `PROTEINS`, `COLLAB`, `RB200`, `RB500`. Synthetic/TU rows use
-200 epochs; the RB rows use 1000 epochs (`--epochs 1000 --dataset RB200`).
+`IMDB-BINARY`, `PROTEINS`, `COLLAB`, `RB200`, `RB500`. Synthetic rows use
+200 epochs; TU-small rows use 200 epochs except ENZYMES (1000 epochs); the RB
+rows use 1000 epochs (`--epochs 1000 --dataset RB200`).
 At the end of training the harness automatically writes the protocol
 evaluation to
 `results/dual_overnight/eval_T1_<DATASET>_s<SEED>.json`: a test-split
@@ -145,10 +149,50 @@ python -u train_baseline.py --model_type LiftMP --lift_ratio 0.2 \
     --batch_size 16 --gen_n 50 100 --gen_p 0.15 --prefix runs/optgnn_er
 ```
 
-TU-dataset cells: `--dataset MUTAG/ENZYMES/PROTEINS/IMDB-BINARY/COLLAB
---epochs 1000` with batch sizes 2/5/9/8/40 respectively; RB cells use
+TU-small cells: `--dataset MUTAG/ENZYMES/PROTEINS/IMDB-BINARY/COLLAB` with
+batch sizes 2/5/9/8/40 respectively and `--epochs 200` (ENZYMES uses
+`--epochs 1000`); RB cells use
 `--dataset ForcedRB --gen_n 6 15 --gen_k 12 21` (RB200) / `--gen_n 20 34
 --gen_k 10 29` (RB500), `--rank 64 --epochs 1000 --num_graphs 1000`.
+
+### 2b. Reproduce the WS [50,100] row (paper Table 1)
+
+One command per arm; seed 0, 2000 graphs, batch 16, 200 epochs. Each command
+trains one arm — see §3 for the protocol evaluation of the resulting
+checkpoint.
+
+```bash
+# raw backbones: GIN / GAT / GCNN / GatedGCNN
+python -u train.py --dataset WattsStrogatz --num_graphs 2000 --batch_size 16 \
+    --gen_n 50 100 --gen_k 4 --gen_p 0.25 --problem_type vertex_cover --seed 0 \
+    --rank 32 --num_layers 16 --epochs 200 --valid_freq 100 --model_type GIN \
+    --penalty_s 1.0 --penalty_e 1.0 --lambda_freq 250 --prefix runs/gin_ws
+#   GAT/GCNN/GatedGCNN: same command with --model_type GAT / GCNN / GatedGCNN
+
+# +AL variants: ALONGIN / ALONGAT / ALONGCNN / ALONGatedGCNN
+python -u train.py --dataset WattsStrogatz --num_graphs 2000 --batch_size 16 \
+    --gen_n 50 100 --gen_k 4 --gen_p 0.25 --problem_type vertex_cover --seed 0 \
+    --rank 32 --num_layers 16 --epochs 200 --valid_freq 100 \
+    --model_type ALONGIN --lift_ratio 0.1 --penalty_s -0.5 --penalty_e 2.5 \
+    --lambda_ratio 0.02 --linear_annealing --lambda_freq 1 --prefix runs/alongin_ws
+#   ALONGAT/ALONGCNN/ALONGatedGCNN: same command with the matching --model_type
+
+# OptGNN (implemented in our framework; see model/baselines.py)
+python -u train_baseline.py --model_type LiftMP --lift_ratio 0.2 \
+    --problem_type vertex_cover --seed 0 --rank 32 --num_layers 16 \
+    --epochs 200 --valid_freq 20 --num_graphs 2000 --dataset WattsStrogatz \
+    --batch_size 16 --gen_n 50 100 --gen_k 4 --gen_p 0.25 --prefix runs/optgnn_ws
+
+# ALON (Table-1 harness; also writes the protocol eval to
+# results/dual_overnight/eval_T1_WS_50_100_s0.json)
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=0 \
+python -u scripts/matrix_fill/train_t1.py --arm T1 --seed 0 --epochs 200 \
+    --dataset WS_50_100
+```
+
+Paper Table-1 WS [50,100] targets (raw / +AL): Reference 45.46; GIN 51.62 /
+47.79; GAT 70.03 / 69.87; GCNN 57.69 / 52.91; GatedGCNN 46.09 / 45.81;
+OptGNN 45.89; ALON 45.60.
 
 ### 3. Evaluate a checkpoint under the protocol
 
